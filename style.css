@@ -230,7 +230,7 @@ nav .navsecond a:hover {
   left: 20%;
 }
 .pagethree {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-color: #efeae3;
 }
@@ -285,11 +285,37 @@ nav .navsecond a:hover {
   height: 100vh;
   width: 100%;
   background-color: #efeae3;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5vw;
+  padding: 13vw 2vw;
   position: relative;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 30%;
+  padding: 0 3vw;
+  border-left: 1px solid rgb(102, 102, 102);
+}
+
+.swiper p{
+  width: 300px;
+  margin-top: 30px;
+ color:rgb(102, 102, 102) ;
+}
+.pagefour .whowork{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.pagefour .whowork div{
+  width: 10px;
+  height: 10px;
+  background-color: orangered;
+  border-radius: 50%;
 }
 .footer {
   position: relative;
@@ -352,7 +378,7 @@ nav .navsecond a:hover {
   padding-top: 20px;
 }
 
-.footer  .div1 {
+.footer .div1 {
   top: -25%;
   left: -4%;
   position: absolute;
@@ -361,17 +387,17 @@ nav .navsecond a:hover {
   background-color: orangered;
   filter: blur(45px);
   border-radius: 90px;
-  animation: div1anime 6s linear  infinite alternate;
+  animation: div1anime 6s linear infinite alternate;
 }
 @keyframes div1anime {
   from {
-    transform:skew(0,-20deg);
+    transform: skew(0, -20deg);
   }
   to {
-    transform: skew(0deg,-30deg);
+    transform: skew(0deg, -30deg);
   }
 }
-.footer  .div2 {
+.footer .div2 {
   top: -30%;
   left: 30%;
   position: absolute;
@@ -380,13 +406,13 @@ nav .navsecond a:hover {
   background-color: orangered;
   filter: blur(45px);
 
-  animation: div2anime 6s linear  infinite alternate;
+  animation: div2anime 6s linear infinite alternate;
 }
 @keyframes div2anime {
   from {
-    transform: skew(0deg,20deg);
+    transform: skew(0deg, 20deg);
   }
   to {
-    transform: skew(0deg,30deg);
+    transform: skew(0deg, 30deg);
   }
 }
