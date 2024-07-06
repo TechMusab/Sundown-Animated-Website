@@ -269,3 +269,17 @@ width: 20%;
   z-index: 5;
  padding: 30px 10px;
 }
+.imagediv{
+  height: 30vw;
+  width: 20vw;
+  /* background-color: red; */
+  position: fixed;
+  border-radius: 7px;
+  z-index: 7;
+  left: 50%;
+  top: 25%;
+  display: none;
+  background-size: cover;
+  background-position: center;
+  transition: all 1s ease;
+}
