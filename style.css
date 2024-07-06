@@ -299,19 +299,19 @@ nav .navsecond a:hover {
   border-left: 1px solid rgb(102, 102, 102);
 }
 
-.swiper p{
+.swiper p {
   width: 300px;
   margin-top: 30px;
- color:rgb(102, 102, 102) ;
+  color: rgb(102, 102, 102);
 }
-.pagefour .whowork{
+.pagefour .whowork {
   display: flex;
   gap: 10px;
   align-items: center;
   margin-bottom: 50px;
 }
 
-.pagefour .whowork div{
+.pagefour .whowork div {
   width: 10px;
   height: 10px;
   background-color: orangered;
@@ -416,3 +416,46 @@ nav .navsecond a:hover {
     transform: skew(0deg, 30deg);
   }
 }
+/* tabs */
+.tabs {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #efeae3;
+  padding: 4vw 7vw;
+}
+
+.tabscontainer {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  border-radius: 30px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 2s ease-in-out;
+}
+
+.tabscontainer img {
+  width: 50%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.tabscontainer .wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 170px;
+}
+
+.tabscontainer .wrapper .tabsheading h1 {
+  font-size: 3vw;
+  cursor: pointer;
+  color: #efeae3;
+}
+
+.tabscontainer .wrapper p {
+  width: 300px;
+}
+
