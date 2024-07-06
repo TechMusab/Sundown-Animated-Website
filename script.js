@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       containers[tabName].style.display = "flex";
     });
   });
+  //when documents loads the styling of the containers
   containers["Design"].style.display = "flex";
   containers["Project"].style.display = "none";
   containers["Execution"].style.display = "none";
