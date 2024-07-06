@@ -18,3 +18,9 @@ images.forEach(function(image){
         imagediv.style.backgroundImage=`url(${img})`;
     })
 })
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 100,
+   
+  });
