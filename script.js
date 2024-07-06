@@ -1,7 +1,7 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('.main'),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('.main'),
+//     smooth: true
+// });
 const container=document.querySelector('.elementcontainer');
 const imagediv=document.querySelector('.imagediv');
 container.addEventListener('mouseenter', function(){
