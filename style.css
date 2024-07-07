@@ -101,7 +101,7 @@ nav .navsecond a:hover {
   right: 0;
   top: 74vh;
   width: 40vw;
-  height: 30vw;
+  height: 50vh;
   z-index: 1;
 }
 .hero .hero1 {
@@ -544,9 +544,14 @@ nav .navsecond a:hover {
     /*line height is calculated as line-height - font size relative to font size*/
     line-height: 13vw;
   }
-  .firstpage .hero {
-    width: 60vw;
-    height: 60vh;
+
+  .hero .hero2 {
+    width:80vw;
+    height: 40vh;
+  }
+  .hero .hero3 {
+    width: 80vw;
+    height: 40vh;
   }
   .firstpage video {
     height: 70vh;
