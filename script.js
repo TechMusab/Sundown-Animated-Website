@@ -46,3 +46,18 @@ document.addEventListener("DOMContentLoaded", function () {
   containers["Project"].style.display = "none";
   containers["Execution"].style.display = "none";
 });
+let flag = 0;
+document.querySelector(".resmenu").addEventListener("click", function () {
+  if (flag == 0) {
+    document.querySelector(".resmenudiv").style.top = "0";
+    document.querySelector("nav img").style.opacity = "0";
+    flag = 1;
+  } else {
+    document.querySelector(".resmenudiv").style.top = "-100%";
+    document.querySelector("nav img").style.opacity = "1";
+    falg = 0;
+  }
+});
+setTimeout(function() {
+  document.querySelector('.loader').style.top = "-100%";
+},4000);
