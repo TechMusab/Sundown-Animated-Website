@@ -25,6 +25,11 @@ nav {
   justify-content: space-between;
   /* background-color: red; */
   padding: 2rem 0;
+  position: relative;
+  z-index: 12323;
+}
+.resmenu {
+  display: none;
 }
 nav .navsecond {
   display: flex;
@@ -79,9 +84,9 @@ nav .navsecond a:hover {
   line-height: 1.5rem;
 }
 .right h1 {
-  font-size: 9vw;
+  font-size: 10vw;
   /*line height is calculated as line-height - font size relative to font size*/
-  line-height: 7vw;
+  line-height: 7.5vw;
   text-align: right;
 }
 .firstpage video {
@@ -94,7 +99,7 @@ nav .navsecond a:hover {
 .firstpage .hero {
   position: absolute;
   right: 0;
-  top: 69vh;
+  top: 74vh;
   width: 40vw;
   height: 30vw;
   z-index: 1;
@@ -103,7 +108,7 @@ nav .navsecond a:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: #fd330b;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   filter: blur(20px);
@@ -112,7 +117,7 @@ nav .navsecond a:hover {
   position: absolute;
   width: 30vw;
   height: 30vw;
-  background-color: red;
+  background-color: #fd330b;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   filter: blur(20px);
@@ -123,7 +128,7 @@ nav .navsecond a:hover {
   position: absolute;
   width: 30vw;
   height: 30vw;
-  background-color: red;
+  background-color: #fd330b;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   filter: blur(20px);
@@ -362,12 +367,13 @@ nav .navsecond a:hover {
   background: transparent;
   outline: none;
   border: none;
-  padding: 10px 70px;
-  border-bottom: 1px solid rgb(103, 103, 103);
+  padding: 10px 0;
+  width: 300px;
+  border-bottom: 1px solid rgb(255, 255, 255);
   color: white;
 }
 .mysecond .inputemail input::placeholder {
-  color: rgb(103, 103, 103);
+  color: rgb(254, 254, 254);
 }
 .mysecond .inputemail p {
   width: 230px;
@@ -385,7 +391,7 @@ nav .navsecond a:hover {
   height: 75vh;
   width: 45vw;
   background-color: orangered;
-  filter: blur(45px);
+  filter: blur(100px);
   border-radius: 90px;
   animation: div1anime 6s linear infinite alternate;
 }
@@ -404,7 +410,7 @@ nav .navsecond a:hover {
   height: 85vh;
   width: 85vw;
   background-color: orangered;
-  filter: blur(45px);
+  filter: blur(100px);
 
   animation: div2anime 6s linear infinite alternate;
 }
@@ -459,3 +465,164 @@ nav .navsecond a:hover {
   width: 300px;
 }
 
+/* responsivenss */
+@media (max-width: 600px) {
+  .firstpage {
+    padding: 0vw 6vw;
+  }
+  nav img {
+    height: 7vh;
+    transition: all 0.5s ease;
+  }
+  /*problem occured here when i am giving z-index to resmenudiv 100 and page 99 and my navbar zindex is 12323 so when i click menu my resmenudiv appers with the z-index of 100 where my page1 index is 99 so no matter what z-index of my navbar is my page1 index is still 99 so it not appers on top of my resmenudiv*/
+  .resmenudiv {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 100;
+    top: -100%;
+    transition: all 0.7s ease-in-out;
+  }
+  nav .navsecond {
+    display: none;
+  }
+  .myinnerdiv {
+    position: relative;
+    background-color: #efeae3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 50%;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .myinnerdiv .linethrough {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(144, 144, 144);
+    position: absolute;
+    top: 30%;
+    right: 0;
+  }
+  .myinnerdiv div {
+    line-height: 13vw;
+    text-align: right;
+    font-size: 7vw;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+  }
+  nav .resmenu {
+    display: block;
+    border-radius: 50px;
+    padding: 3vw 5vw;
+    color: black;
+    border: 1px solid rgb(144, 144, 144);
+    padding-left: 8vw;
+  }
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    border-bottom: 1px solid #000000;
+    gap: 15%;
+    padding-bottom: 2vw;
+  }
+  .left {
+    align-self: flex-start;
+  }
+  .right {
+    align-self: flex-end;
+  }
+  .left h3 {
+    width: 95%;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 1.5rem;
+  }
+  .right h1 {
+    font-size: 15vw;
+    /*line height is calculated as line-height - font size relative to font size*/
+    line-height: 13vw;
+  }
+  .firstpage .hero {
+    width: 60vw;
+    height: 60vh;
+  }
+  .firstpage video {
+    height: 70vh;
+    margin-top: 12vw;
+    object-fit: cover;
+  }
+  .moving {
+    padding-top: 20px;
+  }
+  .secondsection .ghomtacircle {
+    height: 50vh;
+    width: 50vw;
+    bottom: 10%;
+    right: 0;
+  }
+  .secondsection h1 {
+    font-size: 6.5vw;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .secondsection .imgcontainer img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .secondsection .imgcontainer {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 70%;
+    z-index: 1000;
+  }
+  .secondsection .imgcontainer p {
+    font-weight: 100;
+  }
+}
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  z-index: 100000;
+  top: 0;
+  transition: all 0.6s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader h1 {
+  color: transparent;
+  font-size: 4vw;
+  text-transform: uppercase;
+  background: linear-gradient(to right, orange, orangered);
+  -webkit-background-clip: text;
+  position: absolute;
+  opacity: 0;
+ animation: movehead 1s linear 1s ;
+}
+.loader h1:nth-child(2) {
+ animation-delay: 2s;
+}
+.loader h1:nth-child(3) {
+ animation-delay: 3s;
+}
+@keyframes movehead {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
