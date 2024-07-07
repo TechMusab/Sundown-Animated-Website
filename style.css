@@ -2,6 +2,11 @@
   font-family: myfont;
   src: url(./NeueHaasDisplayMediu.ttf);
 }
+@font-face {
+  font-family: myfont;
+  src:url(./NeueHaasDisplayLight.ttf);
+  font-weight: 100;
+}
 /*
 what a trick down the ground*/
 
@@ -38,15 +43,15 @@ nav .navsecond {
 }
 nav .navsecond a {
   text-decoration: none;
-  border: 2px solid rgb(158, 150, 150);
+  border: 1px solid rgb(158, 150, 150);
   border-radius: 50px;
   padding: 8px 25px;
-  font-weight: 500;
   color: black;
   font-size: 17px;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  font-weight: 100;
 }
 /*The a and after are st same stacking level when i give z index to 1 after will also get it but if give z-index -1 to after element a will remain on top*/
 nav .navsecond a::after {
@@ -78,15 +83,17 @@ nav .navsecond a:hover {
   padding-bottom: 2vw;
 }
 .left h3 {
-  width: 55%;
-  font-size: 22px;
-  font-weight: 100;
+  width: 30%;
+  font-size: 29px;
   line-height: 1.5rem;
 }
+.right{
+ width: 40vw;
+}
 .right h1 {
-  font-size: 10vw;
+  font-size:9vw;
   /*line height is calculated as line-height - font size relative to font size*/
-  line-height: 7.5vw;
+  line-height: 7vw;
   text-align: right;
 }
 .firstpage video {
@@ -221,6 +228,7 @@ nav .navsecond a:hover {
   width: 20%;
 }
 .secondsection .imgcontainer p {
+  width: 100%;
   font-weight: 100;
 }
 .secondsection .ghomtacircle {
@@ -383,6 +391,10 @@ nav .navsecond a:hover {
   justify-content: space-between;
   padding-top: 20px;
 }
+/*menu section*/
+.myinnerdiv{
+  display: none;
+}
 
 .footer .div1 {
   top: -25%;
@@ -487,6 +499,7 @@ nav .navsecond a:hover {
     display: none;
   }
   .myinnerdiv {
+    display: block;
     position: relative;
     background-color: #efeae3;
     border-bottom-left-radius: 20px;
@@ -532,6 +545,7 @@ nav .navsecond a:hover {
   }
   .right {
     align-self: flex-end;
+    width: 70%;
   }
   .left h3 {
     width: 95%;
@@ -540,9 +554,9 @@ nav .navsecond a:hover {
     line-height: 1.5rem;
   }
   .right h1 {
-    font-size: 15vw;
+    font-size: 17vw;
     /*line height is calculated as line-height - font size relative to font size*/
-    line-height: 13vw;
+    line-height: 15vw;
   }
 
   .hero .hero2 {
@@ -605,6 +619,7 @@ nav .navsecond a:hover {
     margin-top: 50px;
     gap: 30px;
     margin-left: 0;
+
   }
 
   .tabscontainer .wrapper .tabsheading h1 {
@@ -616,6 +631,7 @@ nav .navsecond a:hover {
   .tabscontainer .wrapper p {
     margin-bottom: 100px;
     width: 300px;
+    font-weight: 100;
   }
   .swiper {
     margin-top: 40%;
@@ -658,6 +674,9 @@ nav .navsecond a:hover {
   }
   .footer .myinner {
     flex-wrap: wrap;
+  }
+  .loader h1 {
+    font-size: 10vw;
   }
 }
 .loader {
