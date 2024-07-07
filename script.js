@@ -55,7 +55,7 @@ document.querySelector(".resmenu").addEventListener("click", function () {
   } else {
     document.querySelector(".resmenudiv").style.top = "-100%";
     document.querySelector("nav img").style.opacity = "1";
-    falg = 0;
+    flag = 0;
   }
 });
 setTimeout(function() {

@@ -411,7 +411,6 @@ nav .navsecond a:hover {
   width: 85vw;
   background-color: orangered;
   filter: blur(100px);
-
   animation: div2anime 6s linear infinite alternate;
 }
 @keyframes div2anime {
@@ -583,6 +582,78 @@ nav .navsecond a:hover {
   .secondsection .imgcontainer p {
     font-weight: 100;
   }
+  .tabscontainer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-top: 100px;
+    transition: all 2s ease-in-out;
+  }
+
+  .tabscontainer img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .tabscontainer .wrapper {
+    margin-top: 50px;
+    gap: 30px;
+    margin-left: 0;
+  }
+
+  .tabscontainer .wrapper .tabsheading h1 {
+    font-size: 9vw;
+    cursor: pointer;
+    color: #efeae3;
+  }
+
+  .tabscontainer .wrapper p {
+    margin-bottom: 100px;
+    width: 300px;
+  }
+  .swiper {
+    margin-top: 40%;
+  }
+  .swiper-slide {
+    width: 70%;
+    height: 45vh;
+    padding: 0 3vw;
+    border-left: 1px solid rgb(102, 102, 102);
+  }
+  .footer {
+    height: 65vh;
+  }
+  .mysecond {
+    flex-direction: column;
+    padding:0;
+    align-items:flex-start;
+    gap: 20px;
+  }
+  .mysecond .as {
+    gap: 0;
+  }
+  .mysecond .as p {
+    font-size: 2rem;
+  }
+  .mysecond .inputemail input {
+    width: 400px;
+  }
+  .footer .div1 {
+    height: 55vh;
+    width: 45vw;
+    filter: blur(50px);
+  }
+  .footer .div2 {
+    height: 60vh;
+    width: 85vw;
+    background-color: orangered;
+    filter: blur(100px);
+    animation: div2anime 6s linear infinite alternate;
+  }
+  .footer .myinner {
+    flex-wrap: wrap;
+  }
 }
 .loader {
   position: fixed;
@@ -604,13 +675,13 @@ nav .navsecond a:hover {
   -webkit-background-clip: text;
   position: absolute;
   opacity: 0;
- animation: movehead 1s linear 1s ;
+  animation: movehead 1s linear 1s;
 }
 .loader h1:nth-child(2) {
- animation-delay: 2s;
+  animation-delay: 2s;
 }
 .loader h1:nth-child(3) {
- animation-delay: 3s;
+  animation-delay: 3s;
 }
 @keyframes movehead {
   0% {
